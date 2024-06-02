@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+  <title>Lenni Art</title>
+  <link rel="stylesheet" type="text/css" href="styles/styles.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <!---- <img src="assets/images/logo.svg" class="page-header__logo-img"/>   -->
+        <svg class="page-header__logo-img" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo" />
+        </svg>
+      </a>
+      <nav class="page-header__nav">
+        <a href="events.html" class="page-header__nav-link link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link link">Блог</a>
+        <a href="#" class="page-header__nav-link link">О нас</a>
+        <a href="#" class="page-header__nav-link link">Контакты</a>
+        <a href="event.html" class="page-header__nav-link link">Бронь(Костыль)</a>
+        <a href="default.html" class="page-header__nav-link link">Дефолт</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <div class="page-header__right-block">
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <article class="article">
+      <div class="article__container">
+        <h1 class="article__title title">Заголовок страницы</h1>
+        <div class="article__content content">
+          <h1>Заголовок h1</h1>
+          <h2>Заголовок h2</h2>
+          <h4>Заголовок h4</h4>
+          <h4>Заголовок h4</h4>
+          <h5>Заголовок h5</h5>
+          <h6>Заголовок h6</h6>
+
+          <p>
+            Абзац текста, содержащий <b>жирный</b> текст и <a href="https://tagree.ru/" target="_blank">ссылку</a>.
+          </p>
+          <ul>
+            <li>Элемент списка 1</li>
+            <li>Элемент списка 2</li>
+            <li>Элемент списка 3</li>
+          </ul>
+          <ol>
+            <li>Элемент списка 1</li>
+            <li>Элемент списка 2</li>
+            <li>Элемент списка 3</li>
+          </ol>
+          <blockquote>
+            Здесь содержится цитата
+          </blockquote>
+          <img src="assets/images/about1.jpg" alt="Подпись картинки">
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__border"> </div>
+      <div class="page-footer__wrapper">
+        <nav class="page-footer__nav">
+          <a href="" class="page-footer__nav-link">Календарь мероприятий</a>
+          <a href="" class="page-footer__nav-link">Провести мероприятие</a>
+          <a href="" class="page-footer__nav-link">Стать арендатором</a>
+          <a href="" class="page-footer__nav-link">Наши проекты</a>
+          <a href="" class="page-footer__nav-link">Контакты</a>
+        </nav>
+        <form class="page-footer__form subcribe">
+          <h4 class="subcribe__title">
+            Подпишись и будь в курсе происходящего
+          </h4>
+          <div class="subcribe__wrapper">
+            <input type="email" name="email" placeholder="Email" class="subcribe__input" required />
+            <button type="submit" class="subcribe__submit">Подписаться</button>
+          </div>
+          <label class="subcribe__check check">
+            <input type="checkbox" class="check__input" name="agree" required />
+            <span class="check__mark"></span>
+            <span class="check__label">
+              Согласие на обработку персональных данных
+            </span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
